@@ -1,0 +1,147 @@
+body {
+display: grid;
+  grid-template-areas:
+    "nav header"
+    "nav article"
+    "nav ads"
+    "nav footer";
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 20% 1fr;
+  grid-row-gap: 2px;
+  grid-column-gap: 2px;
+  height: 100vh;
+  margin: 0;
+    --bcolor :  #112233;
+  }
+header, footer, article, nav, div {
+  padding: 1.2em;
+  background : dimgrey;
+  }
+#pageHeader {
+  grid-area: header;
+ background-color: #112233;
+
+
+  }
+#pageFooter {
+  grid-area: footer;
+  }
+#mainArticle {
+  grid-area: article;
+ background-color: cadetblue;
+
+  }
+#mainNav {
+  grid-area: nav;
+  background-image: url("../img/header2.jpg");
+
+  background-size: contain;
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+
+  display: flex;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+background-color: #ee7752;
+
+
+  }
+#siteAds {
+  grid-area: ads;
+  background-color: #104F55;
+  }
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 575px) {
+  body {
+    grid-template-areas:
+
+       "nav header"
+      "nav article"
+      "nav ads"
+      "nav footer";
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    background-color: black;
+    font-size: small;
+
+
+ }
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  list-style-type: none;
+}
+ul li {
+  padding: 6px 0;
+}
+ul li a {
+
+  --fill-color: darkkhaki;
+  /*position: 100vh;*/
+  min-height: 100%;
+  display: block;
+  padding: 4px 0;
+  font: 700 2rem Raleway, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px var(--fill-color);
+  background: linear-gradient(var(--fill-color) 0 100%) left/0 no-repeat;
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  transition: 0.5s linear;
+}
+ul li a:hover {
+  background-size: 100%;
+}
+
+
+
+button{
+
+  border: 2px solid white;
+  background: red;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  width: 250px;
+  height: 50px;
+  font-size: 2em;
+  border-radius: 5px;
+  opacity: .5;
+  top: 60vh;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  transition: .3s;
+}
+
+button:hover{
+  border: 2px solid #104F55;
+  background-color: rgba(365,365,365,0.5);
+  cursor: pointer;
+  color: #104F55;
+  opacity: .8;
+  transition: .3s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.stuck {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  width: 180px;
+ background-color: transparent;
+
+}
+
+.stuck p {
+  margin: 10px;
+}
+

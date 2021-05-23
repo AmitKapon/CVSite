@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static',filename = 'css/MainCSS.css') }}">
+<script src="{{ url_for('static',filename='js/cvJSfile.js') }}">
+
+    </script>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+  <header id="pageHeader" style="font-family: 'Courier New'; font-size: 30px">
+
+      <h1 id="InShort" style="text-align: center; color: darkkhaki; font-family: 'David'"> In Short </h1>
+
+          <ul style="color: white">
+          <li>Student for Industrial Engineering and Management at Ben Gurion University with
+specialization in information systems. </li>
+               <li>Analytical thinker, tech enthusiast, highly motivated, creative and a team player. </li>
+
+              <li>Interested in a creative, innovative and challenging work environment in the world
+of information systems, data analytics and visualization. </li>
+          </ul>
+
+
+
+
+  </header>
+
+  <article id="mainArticle"  style="text-align: left ; font-family: 'Courier New' ; font-size: 30px; color: #e9f1f1 ">
+
+      <h1 id="WorkExp" style="text-align: center; color: darkkhaki; font-family: 'David'"> Work Experience </h1>
+
+        <h2 style="font-size: 35px">2018-Present : Exercise Analyst , Eltel Technologistics Ltd:</h2>
+        <ul id="first">
+
+            <li> • Responsible for analyzing the exercise and publishing learning materials
+according to the client requirements </li>
+
+        <li>
+            • Took part in training new employees on the information system.
+        </li>
+         <li>
+            • Took part in the implementation of a new information system for the
+analyst department - provided reviews and adjustments required from
+off-the-shelf software, SAT and more.
+        </li>
+        </ul>
+
+
+
+
+
+        <h2>  Military service:</h2>
+          <h3> 2014-2015:</h3>
+          <ul>
+              <li> • Divisional Safety and Knowledge Management Officer, responsible for
+knowledge retention and arrangement as well as for safety in variety of
+fields – Samaria regional division.</li>
+               <li> • Initiated a project to build new divisional website to preserve
+operational knowledge.</li>
+          </ul>
+
+          <h3> 2011-2014: </h3>
+            <ul>
+              <li> • Combat service as a commander and officer.</li>
+               <li> • Training soldiers to be commanders – “Bislah 17” Commander school.</li>
+                  <li> • Leading a platoon in training and operations – Kfir division.</li>
+          </ul>
+
+
+
+
+
+
+     <h2 > Education: </h2>
+          <ul>
+          <li>• 3rd year for B.Sc. in Industrial Engineering and Management at Ben
+Gurion University. </li>
+          </ul>
+
+<h1> Community: </h1>
+• Took part in “Perach” scholarship with the Ethiopian community in Beer
+Sheva, to strengthen and promote the Ethiopian youth.
+
+
+
+
+  </article>
+
+
+
+  <nav id="mainNav" >
+      <div class="stuck">
+
+        <img src="{{ url_for('static',filename='img/my pic.jpg') }}" alt="Picture" width="100%">
+
+
+        <ul>
+
+
+  <li><a href="#InShort"  >In-Short</a></li>
+  <li><a href="#WorkExp">Work Experience</a></li>
+  <li><a href="#siteAds">My skills</a></li>
+  <li><a href="#pageFooter">Contact me</a></li>
+</ul>
+
+      </div>
+
+
+
+
+  </nav>
+  <div id="siteAds" style="text-align: left ; font-family: 'Courier New' ; font-size: 30px; color: #e9f1f1">
+
+
+<h3 style="text-align: center; color: darkkhaki; font-family:'David'"> Technical Knowledge</h3>
+
+
+      <ul >
+
+          <li>• SQL</li>
+          <li>• HTML, CSS, JS</li>
+            <li>• RStudio</li>
+            <li>• Java</li>
+            <li>• Microsoft Power BI</li>
+            <li>• VBA</li>
+            <li>• C#</li>
+          <li>• LabView</li>
+
+      </ul>
+
+
+
+  </div>
+  <footer id="pageFooter" >
+
+
+
+
+<button onclick="window.location.href='{{ url_for('static', filename= 'Amit Kapon - CV.pdf') }}';"> Open PDF </button>
+
+
+
+
+<button onclick="window.location.href='{{ url_for('contactList') }}';">My contact list</button>
+  </footer>
+
+
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment8!!</title>
+</head>
+<body style="background-color: dimgray">
+{% include('Header.html') %}
+{% if username=="Arseni" %}
+<h1 style="font-family: 'Ink Free'; text-align: center ; color: darkgoldenrod"> Hello {{ username |  upper }}, this header is unique for you</h1>
+    {% else %}
+    <h1 style="text-align: center">
+       Hello {{ username}} , you are not the lecturer
+    </h1>
+{% endif %}
+<h2>these are my hobbies </h2>
+
+<ul style="size: 50px">
+    {% for hobby in hobbies %}
+    <li> {{ hobby }}</li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
